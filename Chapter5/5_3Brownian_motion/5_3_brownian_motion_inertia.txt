@@ -1,0 +1,15 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+N = 1  # number of trajectory
+radius = 1e-6
+m = 1.11* 1e-14
+eta = 0.001 
+gamma = 6*np.pi*eta*radius
+T= 300
+
+tau = 0.588 # value from book
+
+dt = 0.1*tau/5 #dt should be smaller than 0.1tau so divided by 5
+print
+wi = np.random.rand(dt,1)
